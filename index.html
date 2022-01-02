@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="addForm">
+        <input type="text" id="team1NameInput" placeholder="Team 1 Name" />
+        <button id="team1Minus" type="button">-</button>
+        <input type="text" id="team2NameInput" placeholder="Team 2 Name" />
+        <button id="team2Minus" type="button">-</button>
+        <button id="resetButton" type="button">reset score</button>
+      </div>
+      <div class="topSection" contenteditable="true">
+        <span class="tournamentTitle"
+          ><span class="tibyan">TIBYAN</span>
+          <span class="x"> X </span>
+          <span class="creativo">CREATIVO</span>
+          <span>ROBOTIC COMPETETION</span></span
+        >
+        <button class="addButton"><</button>
+      </div>
+      <div class="scoreSection">
+        <div class="teamSection" id="team1Section">
+          <div class="w-15">
+            <button id="team1ScoreButton" class="teamScoreButton">
+              G<span class="teamBall"><img src="./ball.png" /> </span>AL
+            </button>
+          </div>
+          <div class="w-85">
+            <div id="team1Name" class="teamName">Team 2</div>
+            <div id="team1Score" class="teamScore"></div>
+          </div>
+        </div>
+        <div class="teamSection" id="team2Section">
+          <div class="w-85">
+            <div id="team2Name" class="teamName">Team 2</div>
+            <div id="team2Score" class="teamScore"></div>
+          </div>
+          <div class="w-15">
+            <button id="team2ScoreButton" class="teamScoreButton">
+              G<span class="teamBall"><img src="./ball.png" /> </span>AL
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex">Made by thedevshezzy</div>
+    <script src="./jquery.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
